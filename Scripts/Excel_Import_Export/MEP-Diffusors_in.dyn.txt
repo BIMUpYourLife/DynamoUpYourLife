@@ -1,0 +1,3 @@
+Import script for diffusor informations from Excel back into the model.
+- parameter ALG_mounted will be updated based on the excel file
+- see shared parameter file from BIMUpYourLife - Content repository for adding the parameter to your project. Or use our template, here everything is already set up...

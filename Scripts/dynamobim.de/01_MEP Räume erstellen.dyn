@@ -1,0 +1,101 @@
+<Workspace Version="1.2.1.3083" X="143.084731694214" Y="392.979326283396" zoom="0.529229864988137" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="ba06dff2-7270-491d-b579-0b67626dfe66" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Get Documents" x="-85.6255257125223" y="-0.121711638711247" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <ID value="8e388824-b977-427f-81ec-e9669ae4012f" />
+      <Name value="Get Documents" />
+      <Description value="Queries all linked Revit files and retrieves their Name, LinkInstance and Document properties." />
+      <Inputs />
+      <Outputs>
+        <Output value="Link Instance" />
+        <Output value="Link Doc" />
+        <Output value="Link Name" />
+        <Output value="Link Path" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="82ef8598-723f-4836-ac8e-f57a59af8c10" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Element.GetFromLinkedFile" x="173.378995926001" y="-0.516981865635056" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+      <ID value="8eccfa8a-771e-4be5-a92b-4fef36310e6b" />
+      <Name value="Element.GetFromLinkedFile" />
+      <Description value="Get elements from link document instance based on category" />
+      <Inputs>
+        <Input value="Link Instance" />
+        <Input value="Link Document" />
+        <Input value="Category" />
+      </Inputs>
+      <Outputs>
+        <Output value="Element(s)" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <DSRevitNodesUI.Categories guid="4fdef984-b83a-4f6d-91a2-12cce9ffb243" type="DSRevitNodesUI.Categories" nickname="Categories" x="-84.650333930941" y="167.728971874989" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="393:Rooms" />
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="402ec509-2416-4e66-95d7-3042d0bda1ab" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.SetParameterByName" x="1463.2399174597" y="-255.754939687632" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.SetParameterByName@string,var">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="4216ceeb-98a3-42a4-9c5c-a0fcd8fa5af1" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.SetParameterByName" x="1465.31949974734" y="-112.817746220513" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.SetParameterByName@string,var">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="23351d7b-6cfb-47c8-8b0e-ddec04ed519b" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Room.Location" x="713.747967138557" y="-257.862879267955" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Room.Location">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="a0512a9a-0b9f-4fae-b82e-1287312d5a7a" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Space.ByPoint" x="935.403028169313" y="-259.005655644922" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="C:\Users\secerbl\AppData\Roaming\Dynamo\Dynamo%20Revit\1.2\packages\DynamoMEP\bin\DynamoMEP.dll" function="Revit.Elements.Space.ByPoint@Autodesk.DesignScript.Geometry.Point">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="b43f98a6-3eb1-496d-8b30-ddd297c27457" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.GetParameterValueByName" x="934.145451793881" y="121.130171618382" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.GetParameterValueByName@string">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="d50bad25-3caf-4426-8f72-5445729b9db5" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="687.716434991025" y="44.601930672145" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;Name&quot;;&#xA;&quot;Nummer&quot;;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="ce338b9d-ef3e-4455-96bc-150014dd1bb7" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.GetParameterValueByName" x="935.84262651079" y="273.666640605872" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.GetParameterValueByName@string">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="ba06dff2-7270-491d-b579-0b67626dfe66" start_index="0" end="82ef8598-723f-4836-ac8e-f57a59af8c10" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="ba06dff2-7270-491d-b579-0b67626dfe66" start_index="1" end="82ef8598-723f-4836-ac8e-f57a59af8c10" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="82ef8598-723f-4836-ac8e-f57a59af8c10" start_index="0" end="23351d7b-6cfb-47c8-8b0e-ddec04ed519b" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="82ef8598-723f-4836-ac8e-f57a59af8c10" start_index="0" end="b43f98a6-3eb1-496d-8b30-ddd297c27457" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="82ef8598-723f-4836-ac8e-f57a59af8c10" start_index="0" end="ce338b9d-ef3e-4455-96bc-150014dd1bb7" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="4fdef984-b83a-4f6d-91a2-12cce9ffb243" start_index="0" end="82ef8598-723f-4836-ac8e-f57a59af8c10" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="23351d7b-6cfb-47c8-8b0e-ddec04ed519b" start_index="0" end="a0512a9a-0b9f-4fae-b82e-1287312d5a7a" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a0512a9a-0b9f-4fae-b82e-1287312d5a7a" start_index="0" end="402ec509-2416-4e66-95d7-3042d0bda1ab" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a0512a9a-0b9f-4fae-b82e-1287312d5a7a" start_index="0" end="4216ceeb-98a3-42a4-9c5c-a0fcd8fa5af1" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b43f98a6-3eb1-496d-8b30-ddd297c27457" start_index="0" end="402ec509-2416-4e66-95d7-3042d0bda1ab" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d50bad25-3caf-4426-8f72-5445729b9db5" start_index="0" end="b43f98a6-3eb1-496d-8b30-ddd297c27457" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d50bad25-3caf-4426-8f72-5445729b9db5" start_index="0" end="402ec509-2416-4e66-95d7-3042d0bda1ab" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d50bad25-3caf-4426-8f72-5445729b9db5" start_index="1" end="ce338b9d-ef3e-4455-96bc-150014dd1bb7" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d50bad25-3caf-4426-8f72-5445729b9db5" start_index="1" end="4216ceeb-98a3-42a4-9c5c-a0fcd8fa5af1" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="ce338b9d-ef3e-4455-96bc-150014dd1bb7" start_index="0" end="4216ceeb-98a3-42a4-9c5c-a0fcd8fa5af1" end_index="2" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="c81a4571-6711-4495-9a52-edd3668dbfe3" annotationText="Auslesen der Räume aus der verlinkten Datei" left="-95.6255257125223" top="-39.5169818656351" width="545.004521638523" height="300.245953740624" fontSize="24" InitialTop="-0.516981865635056" InitialHeight="291.245953740624" TextblockHeight="29" backgrouund="#FFC1D676">
+      <Models ModelGuid="ba06dff2-7270-491d-b579-0b67626dfe66" />
+      <Models ModelGuid="82ef8598-723f-4836-ac8e-f57a59af8c10" />
+      <Models ModelGuid="4fdef984-b83a-4f6d-91a2-12cce9ffb243" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="6213f7a8-f2a4-40c1-b16d-6dd4a1aa152c" annotationText="Erstellung der MEP-Räume basierend auf der Lage der Architekturräume" left="703.747967138557" top="-327.005655644922" width="424.655061030756" height="162.142776376967" fontSize="24" InitialTop="-259.005655644922" InitialHeight="124.142776376967" TextblockHeight="58" backgrouund="#FFC1D676">
+      <Models ModelGuid="23351d7b-6cfb-47c8-8b0e-ddec04ed519b" />
+      <Models ModelGuid="a0512a9a-0b9f-4fae-b82e-1287312d5a7a" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="32e482b5-dbe8-47c1-bc33-9edf5ee49581" annotationText="Aulesen bestimmter Eigenschaften aus den Architekturräumen, die auf die MEP-Räume übertragen werden sollen" left="677.716434991025" top="-51.398069327855" width="519.126191519765" height="444.064709933727" fontSize="24" InitialTop="44.601930672145" InitialHeight="335.990456236664" TextblockHeight="86" backgrouund="#FFC1D676">
+      <Models ModelGuid="b43f98a6-3eb1-496d-8b30-ddd297c27457" />
+      <Models ModelGuid="d50bad25-3caf-4426-8f72-5445729b9db5" />
+      <Models ModelGuid="ce338b9d-ef3e-4455-96bc-150014dd1bb7" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="97219900-3d5c-43d1-9369-0dcd646bda81" annotationText="Übertragung der Eigenschaften auf die MEP-Räumen" left="1453.2399174597" top="-351.754939687632" width="280.07958228764" height="383.937193467119" fontSize="24" InitialTop="-255.754939687632" InitialHeight="317.937193467119" TextblockHeight="86" backgrouund="#FFC1D676">
+      <Models ModelGuid="402ec509-2416-4e66-95d7-3042d0bda1ab" />
+      <Models ModelGuid="4216ceeb-98a3-42a4-9c5c-a0fcd8fa5af1" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

@@ -1,3 +1,0 @@
-Export script for diffusor informations from Model to Excel.
-- parameter ALG_mounted will be read based on the model items
-- see shared parameter file from BIMUpYourLife - Content repository for adding the parameter to your project. Or use our template, here everything is already set up...

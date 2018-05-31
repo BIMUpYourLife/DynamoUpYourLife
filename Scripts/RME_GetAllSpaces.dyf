@@ -1,0 +1,20 @@
+<Workspace Version="0.9.1.4062" X="0" Y="0" zoom="1" Name="GetAllSpaces" Description="Retrieves all spaces from model" ID="2f5df5e4-b847-466d-94c0-4530b97a3cbf" Category="Selection">
+  <NamespaceResolutionMap />
+  <Elements>
+    <DSRevitNodesUI.Categories guid="49ddb478-a430-4ee6-9d2c-18be0cddb622" type="DSRevitNodesUI.Categories" nickname="Categories" x="250" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" index="559:MEPSpaces" />
+    <DSRevitNodesUI.ElementsOfCategory guid="f6269ce1-4c78-4e3c-86fd-ac3474230430" type="DSRevitNodesUI.ElementsOfCategory" nickname="All Elements of Category" x="478.919827472997" y="42.6712703227392" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" />
+    <Dynamo.Graph.Nodes.CustomNodes.Output guid="90368dfe-e379-486a-8897-61c684c324ff" type="Dynamo.Graph.Nodes.CustomNodes.Output" nickname="Output" x="727.919827472997" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false">
+      <Symbol value="Elements" />
+    </Dynamo.Graph.Nodes.CustomNodes.Output>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="49ddb478-a430-4ee6-9d2c-18be0cddb622" start_index="0" end="f6269ce1-4c78-4e3c-86fd-ac3474230430" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="f6269ce1-4c78-4e3c-86fd-ac3474230430" start_index="0" end="90368dfe-e379-486a-8897-61c684c324ff" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Hintergrundvorschau" eyeX="8.23489284515381" eyeY="24.4060726165771" eyeZ="26.445219039917" lookX="-10.7041444778442" lookY="-20.5258655548096" lookZ="-30.5480670928955" upX="-0.113102473318577" upY="0.939692616462708" upZ="-0.322777956724167" />
+  </Cameras>
+</Workspace>

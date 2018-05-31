@@ -1,0 +1,30 @@
+<Workspace Version="0.9.1.4062" X="108" Y="76" zoom="1" Name="Convert internal RME airflow to m3_h" Description="Convert internal RME airflow to m3/h" ID="b7e6fe43-8454-4d2a-898c-3c04ffe91020" Category="Convert.Airflow">
+  <NamespaceResolutionMap />
+  <Elements>
+    <CoreNodeModels.Formula guid="83e4e513-5614-4560-8c64-fe3ed2530bcf" type="CoreNodeModels.Formula" nickname="Formula" x="390.941371597475" y="142.073902138577" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false">
+      <FormulaText>(volume *change_rate)/Conversion</FormulaText>
+    </CoreNodeModels.Formula>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="4f6928dd-9999-4993-b788-3aaeb21511bf" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="250" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="//Conversion Rate for internal units RME&#xA;101.940647731;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="de21d3c0-835a-4f8c-8fde-dfce1a51d4af" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="0" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false">
+      <Symbol value="volume" />
+    </Dynamo.Graph.Nodes.CustomNodes.Symbol>
+    <Dynamo.Graph.Nodes.CustomNodes.Symbol guid="4c0e7c9e-80b8-4814-a93d-41e70c37db1f" type="Dynamo.Graph.Nodes.CustomNodes.Symbol" nickname="Input" x="0" y="150" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false">
+      <Symbol value="change_rate" />
+    </Dynamo.Graph.Nodes.CustomNodes.Symbol>
+    <Dynamo.Graph.Nodes.CustomNodes.Output guid="b39de2db-ea19-4a58-b0ac-e8a25628b61a" type="Dynamo.Graph.Nodes.CustomNodes.Output" nickname="Output" x="783.941371597475" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false">
+      <Symbol value="" />
+    </Dynamo.Graph.Nodes.CustomNodes.Output>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="83e4e513-5614-4560-8c64-fe3ed2530bcf" start_index="0" end="b39de2db-ea19-4a58-b0ac-e8a25628b61a" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="4f6928dd-9999-4993-b788-3aaeb21511bf" start_index="0" end="83e4e513-5614-4560-8c64-fe3ed2530bcf" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="de21d3c0-835a-4f8c-8fde-dfce1a51d4af" start_index="0" end="83e4e513-5614-4560-8c64-fe3ed2530bcf" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="4c0e7c9e-80b8-4814-a93d-41e70c37db1f" start_index="0" end="83e4e513-5614-4560-8c64-fe3ed2530bcf" end_index="1" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Hintergrundvorschau" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

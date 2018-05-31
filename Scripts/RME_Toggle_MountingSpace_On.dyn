@@ -1,0 +1,45 @@
+<Workspace Version="0.9.1.4062" X="41.1625" Y="62.2525" zoom="0.8425" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
+  <NamespaceResolutionMap />
+  <Elements>
+    <CoreNodeModels.Input.StringInput guid="27c514dc-0b80-49a8-973c-c0a7855afa26" type="CoreNodeModels.Input.StringInput" nickname="String" x="537.640949554896" y="-44.2575963503141" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false">
+      <System.String>ALG_Montageraum_Sichtbar</System.String>
+      <System.String value="ALG_Montageraum_Sichtbar" />
+    </CoreNodeModels.Input.StringInput>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="ae9597bb-eff6-49f8-9a67-215e56fcdf9a" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.SetParameterByName" x="785.18920189064" y="146" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.SetParameterByName@string,var" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="f5244907-9a14-47e4-ab37-fdb22b2c20b4" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="516.833827893175" y="225.326409495549" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" CodeText="1;&#xA;0;" ShouldFocus="false" />
+    <CoreNodeModels.Watch guid="fa6b4460-0969-4ac5-8ffb-1eb99ade709d" type="CoreNodeModels.Watch" nickname="Watch" x="1095" y="150" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" />
+    <CoreNodeModels.CreateList guid="f6f57c3b-bcce-48ee-9023-4118fda7bf89" type="CoreNodeModels.CreateList" nickname="List.Create" x="340.311572700296" y="99.2551928783383" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" inputcount="2" />
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="0ce2edfe-21f2-4308-9d8d-21a26e6d14a2" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="RME_GetAllPlumbingFixtures" x="15.0890207715133" y="-12.3175074183977" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="True" IsFrozen="false">
+      <ID value="1ae7c680-6704-4f0b-a28b-e3facbc0de9d" />
+      <Name value="RME_GetAllPlumbingFixtures" />
+      <Description value="" />
+      <Inputs />
+      <Outputs>
+        <Output value="Elements" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="07b5959c-daaf-406e-916d-f6484a47c54b" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="RME_GetAllDuctAccessory" x="25.7715133531156" y="86.1988130563797" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="True" IsFrozen="false">
+      <ID value="3ae2fbec-8185-4eab-8d2a-27fb5c11c646" />
+      <Name value="RME_GetAllDuctAccessory" />
+      <Description value="" />
+      <Inputs />
+      <Outputs>
+        <Output value="Elements" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="27c514dc-0b80-49a8-973c-c0a7855afa26" start_index="0" end="ae9597bb-eff6-49f8-9a67-215e56fcdf9a" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="ae9597bb-eff6-49f8-9a67-215e56fcdf9a" start_index="0" end="fa6b4460-0969-4ac5-8ffb-1eb99ade709d" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="f5244907-9a14-47e4-ab37-fdb22b2c20b4" start_index="0" end="ae9597bb-eff6-49f8-9a67-215e56fcdf9a" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="f6f57c3b-bcce-48ee-9023-4118fda7bf89" start_index="0" end="ae9597bb-eff6-49f8-9a67-215e56fcdf9a" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="0ce2edfe-21f2-4308-9d8d-21a26e6d14a2" start_index="0" end="f6f57c3b-bcce-48ee-9023-4118fda7bf89" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="07b5959c-daaf-406e-916d-f6484a47c54b" start_index="0" end="f6f57c3b-bcce-48ee-9023-4118fda7bf89" end_index="1" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="8.23489284515381" eyeY="24.4060726165771" eyeZ="26.445219039917" lookX="-10.7041444778442" lookY="-20.5258655548096" lookZ="-30.5480670928955" upX="-0.113102473318577" upY="0.939692616462708" upZ="-0.322777956724167" />
+  </Cameras>
+</Workspace>

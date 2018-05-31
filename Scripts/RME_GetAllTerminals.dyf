@@ -1,0 +1,20 @@
+<Workspace Version="0.9.1.4062" X="-22.0427450296736" Y="190.083078597923" zoom="0.97676875" Name="GetAllTerminals" Description="Retrieves all terminals from model" ID="1b467fe4-a55f-41a2-8ac3-567bccd7c8d1" Category="Selection">
+  <NamespaceResolutionMap />
+  <Elements>
+    <DSRevitNodesUI.Categories guid="09e565b4-5486-46a8-94b4-8c1fd0a06960" type="DSRevitNodesUI.Categories" nickname="Categories" x="250" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" index="254:DuctTerminal" />
+    <DSRevitNodesUI.ElementsOfCategory guid="9ef7b8da-2ef5-4395-a57b-92c7e05e95e0" type="DSRevitNodesUI.ElementsOfCategory" nickname="All Elements of Category" x="451.494226485153" y="14.894691742448" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" />
+    <Dynamo.Graph.Nodes.CustomNodes.Output guid="9484c969-ed67-4869-a2c5-1f30adbe858e" type="Dynamo.Graph.Nodes.CustomNodes.Output" nickname="Output" x="700.494226485153" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false">
+      <Symbol value="Elements" />
+    </Dynamo.Graph.Nodes.CustomNodes.Output>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="09e565b4-5486-46a8-94b4-8c1fd0a06960" start_index="0" end="9ef7b8da-2ef5-4395-a57b-92c7e05e95e0" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="9ef7b8da-2ef5-4395-a57b-92c7e05e95e0" start_index="0" end="9484c969-ed67-4869-a2c5-1f30adbe858e" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Hintergrundvorschau" eyeX="8.23489284515381" eyeY="24.4060726165771" eyeZ="26.445219039917" lookX="-10.7041444778442" lookY="-20.5258655548096" lookZ="-30.5480670928955" upX="-0.113102473318577" upY="0.939692616462708" upZ="-0.322777956724167" />
+  </Cameras>
+</Workspace>

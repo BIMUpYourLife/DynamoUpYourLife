@@ -1,0 +1,20 @@
+<Workspace Version="0.9.1.4062" X="0" Y="0" zoom="1" Name="GetAllDuctAccessory" Description="" ID="99672277-a83b-442f-984b-44c4c4a069af" Category="Selection">
+  <NamespaceResolutionMap />
+  <Elements>
+    <DSRevitNodesUI.Categories guid="a2cd2bb6-ccde-4f29-8ab3-3e50808c1822" type="DSRevitNodesUI.Categories" nickname="Categories" x="250" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" index="229:DuctAccessory" />
+    <DSRevitNodesUI.ElementsOfCategory guid="faacc75b-c192-4332-944b-9cf5879ad2cc" type="DSRevitNodesUI.ElementsOfCategory" nickname="All Elements of Category" x="499" y="77" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" />
+    <Dynamo.Graph.Nodes.CustomNodes.Output guid="90828c35-bc6e-47f4-ab4d-e11cf855ffc3" type="Dynamo.Graph.Nodes.CustomNodes.Output" nickname="Output" x="748" y="0" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false">
+      <Symbol value="Elements" />
+    </Dynamo.Graph.Nodes.CustomNodes.Output>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="a2cd2bb6-ccde-4f29-8ab3-3e50808c1822" start_index="0" end="faacc75b-c192-4332-944b-9cf5879ad2cc" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="faacc75b-c192-4332-944b-9cf5879ad2cc" start_index="0" end="90828c35-bc6e-47f4-ab4d-e11cf855ffc3" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="8.23489284515381" eyeY="24.4060726165771" eyeZ="26.445219039917" lookX="-10.7041444778442" lookY="-20.5258655548096" lookZ="-30.5480670928955" upX="-0.113102473318577" upY="0.939692616462708" upZ="-0.322777956724167" />
+  </Cameras>
+</Workspace>
